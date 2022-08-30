@@ -1,13 +1,17 @@
 {
-  "name": "back-end",
+  "name": "back-end-mama-lelos",
   "version": "1.0.0",
-  "description": "",
+  "description": "Base CRUD API to make a pizza order and get that order",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "clear && jest",
+    "build": "clear && tsc",
+    "start": "clear && node ./build/src/index.js",
+    "dev": "clear && ts-node-dev ./src/index.ts",
+    "migrations": "clear && node ./src/data/migrations.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Node.js", "SOLID", "CRUD", "Typescript"],
+  "author": "Leona Christen",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
